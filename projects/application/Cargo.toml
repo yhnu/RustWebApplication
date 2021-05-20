@@ -1,0 +1,15 @@
+[package]
+name = "application"
+version = "0.1.0"
+authors = ["Matthew Evers <mreverssci@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rusqlite = { version = "0.24.0", features = ["bundled"]}
+webview_official = { path = '../../deps/webview' }
+# 序列化库
+serde_json = "1.0"
+serde = { version = "1.0", features = [ "derive" ] }
+webview_native_api = {path='../webview_native_api'}

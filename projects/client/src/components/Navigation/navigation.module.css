@@ -1,0 +1,29 @@
+.navigation {
+	background-color: var(--theme-dark);
+	color: white;
+	height: 44px;
+
+	display: flex;
+	align-items: center;
+}
+
+.navigation-content {
+	max-width: var(--max-width);
+	margin: auto;
+}
+
+.logo {
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	padding: 8px;
+	text-decoration: none;
+}
+
+.hamburger > span > svg,
+.hamburger > span,
+.hamburger {
+	height: 44px;
+	width: 44px;
+	fill: white;
+}

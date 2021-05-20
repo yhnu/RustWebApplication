@@ -1,0 +1,19 @@
+[package]
+name = "webview_native_api"
+version = "0.1.0"
+authors = ["Matthew Evers <mreverssci@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "webview_native_api"
+path = "src/lib.rs"
+
+[target."cfg(target_os = \"windows\")".dependencies]
+# Required for nfd to work on windows
+winapi = { version = ">=0.3.8", features = ["shellapi"] }
+
+[dependencies]
+webview_official = { path = '../../deps/webview' }
+serde_json = "1.0"
+serde = { version = "1.0", features = [ "derive" ] }
+nfd = {path = '../../deps/nfd-rs'}

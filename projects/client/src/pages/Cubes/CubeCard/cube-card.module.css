@@ -1,0 +1,21 @@
+.card {
+	box-sizing: border-box;
+	border: 1px solid rgb(169, 182, 201);
+	margin: 6px;
+	flex-basis: 33%;
+	cursor: pointer;
+	max-width: 480px;
+	height: 320px;
+	max-height: 320px;
+}
+
+.card:hover {
+	border: 1px solid black;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+	background-color: rgb(35, 35, 44);
+	color: white;
+	padding: 4px;
+}

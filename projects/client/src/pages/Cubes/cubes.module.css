@@ -1,0 +1,11 @@
+.page {
+	overflow: hidden;
+}
+
+.cube-list {
+	display: flex;
+}
+
+.cube-list-container {
+	overflow: auto;
+}

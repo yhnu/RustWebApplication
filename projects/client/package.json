@@ -1,0 +1,36 @@
+{
+	"name": "rust_client",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node tools/webpack/dev-server/dev-server.js",
+		"build": "webpack --config ./tools/webpack/configs/webpack-prod.config.js --progress --profile --colors"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/react": "^16.9.46",
+		"@types/react-dom": "^16.9.8",
+		"@types/react-router-dom": "^5.1.5",
+		"argparse": "^2.0.0",
+		"base64-inline-loader": "^1.1.1",
+		"css-loader": "^4.2.1",
+		"file-loader": "^6.0.0",
+		"html-webpack-inline-source-plugin": "^1.0.0-beta.2",
+		"html-webpack-plugin": "^4.3.0",
+		"style-loader": "^1.2.1",
+		"svg-inline-loader": "^0.8.2",
+		"ts-loader": "^8.0.2",
+		"typescript": "^3.9.7",
+		"webpack": "^4.44.1",
+		"webpack-cli": "^3.3.12",
+		"webpack-dev-server": "^3.11.0"
+	},
+	"dependencies": {
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-router-dom": "^5.2.0"
+	}
+}
